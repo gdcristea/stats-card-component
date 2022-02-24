@@ -1,0 +1,189 @@
+/* Google Fonts */
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* General */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+    font-size: 0.9375rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 1.875rem 0;
+}
+
+.image2 {
+    display: none; /*want to use it in the media query. Solution here: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping*/
+}
+
+/* Typography */
+.card_img {
+    background-color: hsl(277, 64%, 61%);
+}
+
+img {
+    max-width: 100%; /* responsive */
+    mix-blend-mode: multiply; /* The mix-blend-mode property specifies how an element's content should blend with its direct parent background. */
+    opacity: .75;
+    display: block; /* why did I used it? there was an extra space below the image => solution here: https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image */
+} 
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card_title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.card_title,
+.card_footer_stats {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+.card_content {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin: 1.25rem 0 2.1875rem;
+}
+
+.card_footer_stats {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.card_footer_stats_headings
+ {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .75rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.card_footer_stats_headings,
+.upp {
+    text-transform: uppercase;
+}
+
+.attribution { 
+    font-size: 12px; 
+    width: 90%;
+    margin: .625rem auto .625rem;
+}
+
+a {
+    color: hsl(277, 64%, 61%);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.75;
+}
+
+/* Layout */
+.card_body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.875rem 0;
+}
+
+.card_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_footer > * {
+    margin-bottom: 1.25rem;
+}
+
+.card_footer > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Media query */
+@media (min-width: 725px) {
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+    }
+    
+    .card {
+        width: 95%;
+        max-width: 1020px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card_body {
+        order: 1;
+        width: 47%;
+        padding: 3.125rem;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .card_img {
+        order: 2;
+        width: 47%;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    } 
+
+    .card_footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card_footer > * {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .card_title {
+        font-size: 2.25rem;
+        line-height: 1.4;
+    }
+
+    .card_content {
+        margin: 1.25rem 0 5rem;
+        width: 90%;
+    }
+
+    .card_footer {
+        width: 80%;
+    }
+}
+
