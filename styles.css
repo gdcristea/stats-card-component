@@ -23,6 +23,10 @@ body {
     margin: 1.875rem 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .image2 {
     display: none; /*want to use it in the media query. Solution here: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping*/
 }
