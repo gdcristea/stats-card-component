@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/gdcristea/stats-card-component
-- Live Site URL: https://gdcristea.github.io/stats-preview-card-component/
+- Live Site URL: https://gdcristea.github.io/stats-card-component/
 
 ### Built with
 
