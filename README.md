@@ -62,6 +62,6 @@ img {
 
 - Frontend Mentor - [@gdcristea](https://www.frontendmentor.io/profile/gdcristea)
 
-- Tiwitter - [@gdcristea10](https://twitter.com/gdcristea10)
+- Twitter - [@gdcristea10](https://twitter.com/gdcristea10)
 
 
