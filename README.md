@@ -5,23 +5,17 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ## Table of contents
 
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+  - [Author](#author)
 
 ### The challenge
 
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-
-### Screenshot
-
-![](./screenshots/mobile version.png)
-![](./screenshots/desktop version.png)
 
 ### Links
 
@@ -50,12 +44,6 @@ body {
     display: none; /*want to use it in the media query. Solution here: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping*/
 }
 
-.card_img,
-img {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
 img {
     mix-blend-mode: multiply; /* The mix-blend-mode property specifies how an element's content should blend with its direct parent background. */
     display: block; /* why did I used it? there was an extra space below the image => solution here: https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image */
@@ -70,6 +58,10 @@ img {
 
 ## Author
 
-- Frontend Mentor - [@gdcristea](https://www.frontendmentor.io/profile/gdcristea)
 - Linkedin - [Daniel Cristea](https://www.linkedin.com/in/daniel-cristea-629069191/)
+
+- Frontend Mentor - [@gdcristea](https://www.frontendmentor.io/profile/gdcristea)
+
+- Tiwitter - [@gdcristea10](https://twitter.com/gdcristea10)
+
 
